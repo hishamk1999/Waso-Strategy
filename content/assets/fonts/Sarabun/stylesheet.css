@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sarabun';
+    src: url('Sarabun-Light.eot');
+    src: url('Sarabun-Light.eot?#iefix') format('embedded-opentype'),
+        url('Sarabun-Light.woff2') format('woff2'),
+        url('Sarabun-Light.woff') format('woff'),
+        url('Sarabun-Light.ttf') format('truetype'),
+        url('Sarabun-Light.svg#Sarabun-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

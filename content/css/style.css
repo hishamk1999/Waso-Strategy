@@ -1,0 +1,54 @@
+/*
+-File Map
+-Start global (5-54)
+*/
+/* Start global */
+:root {
+	--main-color: #f9c10b;
+	--sub-color: #dc3545;
+	--balck-color: #333;
+	--font-family: "Sarabun";
+	--font-size: 1rem;
+	--long-delay: 0.6s;
+	--short-delay: 0.4s;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Sarabun";
+	src: url("../assets/fonts/Sarabun/Sarabun-Light.eot Sarabun-Light.eot");
+	src: url("../assets/fonts/Sarabun/Sarabun-Light.eot?#iefix")
+			format("embedded-opentype"),
+		url("../assets/fonts/Sarabun/Sarabun-Light.woff2") format("woff2"),
+		url("../assets/fonts/Sarabun/Sarabun-Light.woff") format("woff"),
+		url("../assets/fonts/Sarabun/Sarabun-Light.ttf") format("truetype"),
+		url("../assets/fonts/Sarabun/Sarabun-Light.svg#Sarabun-Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+body {
+	font-family: var(--font-family), sans-serif;
+}
+.main-color {
+	background-color: var(--main-color);
+}
+.main-background {
+	background-color: var(--main-color);
+}
+.sub-color {
+	color: var(--sub-color);
+}
+.main-icon {
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+section {
+	height: 100vh;
+}
+/* End global */
