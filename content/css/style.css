@@ -48,7 +48,30 @@ body {
 	line-height: 30px;
 	text-align: center;
 }
+.main-fs {
+	font-size: var(--font-size);
+}
 section {
 	height: 100vh;
 }
+p {
+	margin-bottom: 0;
+}
 /* End global */
+/* Start navbar */
+.upper-navbar {
+	padding: 10px 0;
+}
+.upper-navbar__content__icon {
+	font-size: 1.125rem;
+}
+.upper-navbar__content__social li {
+	cursor: pointer;
+}
+.upper-navbar__content__social li a {
+	transition: color var(--short-delay);
+}
+.upper-navbar__content__social li:hover a {
+	color: var(--main-color) !important;
+}
+/*end navbar */
