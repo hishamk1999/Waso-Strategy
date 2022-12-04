@@ -7,6 +7,7 @@
 	--main-color: #f9c10b;
 	--sub-color: #dc3545;
 	--black-color: #333;
+	--muted-color: #717275;
 	--font-family: "Sarabun";
 	--font-size: 1rem;
 	--long-delay: 0.6s;
@@ -51,6 +52,9 @@ body {
 .main-fs {
 	font-size: var(--font-size);
 }
+.text-muted-custom {
+	color: var(--muted-color);
+}
 section {
 	height: 100vh;
 }
@@ -58,7 +62,7 @@ p {
 	margin-bottom: 0;
 }
 /* End global */
-/* Start navbar */
+/* Start upper navbar */
 .upper-navbar {
 	padding: 10px 0;
 }
@@ -74,4 +78,17 @@ p {
 .upper-navbar__content__social li:hover a {
 	color: var(--main-color) !important;
 }
-/*end navbar */
+/*end upper navbar */
+/* Start navbar */
+.main-navbar__nav-item li a {
+	font-weight: 700;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+}
+.main-navbar__nav-item li:hover a {
+	color: var(--sub-color);
+}
+.main-navbar__nav-item li a small strong {
+	letter-spacing: 1.2px;
+}
+/* End navbar */
