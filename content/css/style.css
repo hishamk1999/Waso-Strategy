@@ -55,9 +55,6 @@ body {
 .text-muted-custom {
 	color: var(--muted-color);
 }
-section {
-	height: 100vh;
-}
 p {
 	margin-bottom: 0;
 }
@@ -85,6 +82,9 @@ p {
 	font-size: 0.875rem;
 	letter-spacing: 1px;
 }
+.navbar-nav .nav-link.active {
+	color: var(--sub-color);
+}
 .main-navbar__nav-item li:hover a {
 	color: var(--sub-color);
 }
@@ -92,3 +92,9 @@ p {
 	letter-spacing: 1.2px;
 }
 /* End navbar */
+/* Start main */
+#Section1 {
+	height: calc(100vh - 156px);
+	background-color: #dc3545;
+}
+/* End main */

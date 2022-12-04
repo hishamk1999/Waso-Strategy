@@ -54,7 +54,7 @@
   </nav>
   <!-- End upper-navbar -->
   <!-- Start navbar -->
-  <nav class="navbar navbar-expand-lg bg-white position-sticky shadow-lg main-navbar">
+  <nav class="navbar navbar-expand-lg bg-white position-sticky shadow-lg main-navbar top-0" id="main-navbar">
     <div class="container  justify-content-between w-100">
       <a href="#" class="navbar-brand navbar-logo fs-2 fw-bolder"><span class="text-warning">Waso</span>
         <span class="text-danger">Strategy</span></a>
@@ -88,8 +88,18 @@
       </div>
     </div>
   </nav>
-  <!-- ----------------------------------------------------------------------- -->
   <!-- End navbar -->
+  <!-- Start scrollspy -->
+  <main data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+    <section id="Section1"></section>
+    <section id="Section2"></section>
+    <section id="Section3"></section>
+    <section id="Section4"></section>
+    <section id="Section5"></section>
+  </main>
+
+  <!-- End scrollspy -->
   <!-- Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com -->
   <script src="/content/js/Vendors/all.min.js"></script>
   <!-- Bootstrap v5.2.3 (https://getbootstrap.com/) -->
