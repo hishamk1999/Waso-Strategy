@@ -49,6 +49,13 @@
 body {
 	font-family: var(--font-family), sans-serif;
 }
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--dark-color);
+}
 h1,
 h2,
 h3,
@@ -101,8 +108,78 @@ h6 {
 }
 p {
 	margin-bottom: 0;
+	color: var(--p-color);
+	font-size: var(--p-font-size);
+	font-weight: var(--font-weight-normal);
+}
+.section-padding {
+	padding: 7.5rem 0;
+}
+.custom-rounded {
+	border-radius: 20px;
 }
 /* End global */
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 32px;
+	}
+
+	h4 {
+		font-size: 28px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	h6 {
+		font-size: 18px;
+	}
+
+	.site-footer {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 38px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+	.section-padding {
+		padding: 7.5rem 0;
+	}
+	.copyright-text {
+		padding-bottom: 10px;
+	}
+}
+
 /* Start upper navbar */
 .upper-navbar {
 	padding: 10px 0;
@@ -142,30 +219,30 @@ p {
 #Section1 {
 	height: calc(100vh - 130px);
 }
-.carousel-inner {
+#Section1 .carousel-inner {
 	height: inherit;
 }
-.carousel-item {
+#Section1 .carousel-item {
 	height: inherit;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-.carousel-item:first-of-type {
+#Section1 .carousel-item:first-of-type {
 	background-image: linear-gradient(to top, #0000007c, #00000025),
 		url(/content/assets/images/Section1/First-Slide.jpg);
 }
-.carousel-item:last-of-type {
+#Section1 .carousel-item:last-of-type {
 	background-image: linear-gradient(to top, #0000007c, #00000025),
 		url(/content/assets/images/Section1/Second-Slide.jpg);
 }
-.carousel-caption {
+#Section1 .carousel-caption {
 	margin-bottom: 5.25rem;
 }
-.carousel-caption h2 {
+#Section1 .carousel-caption h2 {
 	font-size: var(--h1-font-size);
 }
-.custom-btn {
+#Section1 .custom-btn {
 	color: var(--white-color);
 	background-color: var(--sub-color);
 	font-weight: var(--font-weight-normal);
@@ -173,30 +250,76 @@ p {
 	border-radius: 6.25rem;
 	letter-spacing: 1px;
 }
-.custom-btn:hover {
+#Section1 .custom-btn:hover {
 	background-color: var(--main-color);
 }
-.popup-youtube svg {
+#Section1 .popup-youtube svg {
 	font-size: 3rem;
 	transition: color var(--short-delay);
 }
-.popup-youtube:hover svg {
+#Section1 .popup-youtube:hover svg {
 	font-size: 3rem;
 	color: var(--main-color) !important;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+#Section1 .carousel-control-prev-icon,
+#Section1 .carousel-control-next-icon {
 	height: 5rem;
 	width: 5rem;
 }
 /*  `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	.carousel-caption h2 {
+	#Section1 .carousel-caption h2 {
 		font-size: var(--h4-font-size);
 	}
-	.custom-btn {
+	#Section1 .custom-btn {
 		font-size: 0.8125rem;
 	}
 }
 /* End section-1 */
+/* Start section-2 */
+#Section2 .about-card {
+	padding: 2.5rem;
+}
+#Section2 .join-btn {
+	color: var(--white-color);
+	background-color: var(--main-color);
+	font-weight: var(--font-weight-medium);
+	padding: 0.75rem 1.5rem;
+	border-radius: 6.25rem;
+	letter-spacing: 1px;
+	transition: background var(--short-delay), color var(--short-delay);
+}
+#Section2 .join-btn:hover {
+	background-color: var(--white-color);
+	color: var(--dark-color);
+}
+#Section2 .about-img {
+	background-image: linear-gradient(
+			0turn,
+			rgba(0, 0, 0, 0.932),
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0)
+		),
+		url(/content/assets/images/Section2/About.jpg);
+	background-size: cover;
+	background-position: center;
+}
+@media (max-width: 575.98px) {
+	#Section2 .about-img {
+		height: 350px !important;
+	}
+	#Section2 .about-card {
+		padding: 1.875rem;
+	}
+	#Section2 .join-btn {
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.Section2 .about-card {
+		padding: 1.875rem;
+	}
+}
+/* End section-2 */
 /* End main */
