@@ -198,6 +198,9 @@ p {
 }
 /*end upper navbar */
 /* Start navbar */
+.main-navbar {
+	z-index: 100;
+}
 .main-navbar__nav-item li a {
 	font-weight: 700;
 	font-size: 0.875rem;
