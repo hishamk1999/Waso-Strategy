@@ -33,13 +33,13 @@
 }
 @font-face {
 	font-family: "DM Sans";
-	src: url("/content/assets/fonts/DM-Sans/DMSans-Regular.eot");
-	src: url("/content/assets/fonts/DM-Sans/DMSans-Regular.eot?#iefix")
+	src: url("../assets/fonts/DM-Sans/DMSans-Regular.eot");
+	src: url("../assets/fonts/DM-Sans/DMSans-Regular.eot?#iefix")
 			format("embedded-opentype"),
-		url("/content/assets/fonts/DM-Sans/DMSans-Regular.woff2") format("woff2"),
-		url("/content/assets/fonts/DM-Sans/DMSans-Regular.woff") format("woff"),
-		url("/content/assets/fonts/DM-Sans/DMSans-Regular.ttf") format("truetype"),
-		url("/content/assets/fonts/DM-Sans/DMSans-Regular.svg#DMSans-Regular")
+		url("../assets/fonts/DM-Sans/DMSans-Regular.woff2") format("woff2"),
+		url("../assets/fonts/DM-Sans/DMSans-Regular.woff") format("woff"),
+		url("../assets/fonts/DM-Sans/DMSans-Regular.ttf") format("truetype"),
+		url("../assets/fonts/DM-Sans/DMSans-Regular.svg#DMSans-Regular")
 			format("svg");
 	font-weight: normal;
 	font-style: normal;
@@ -238,11 +238,11 @@ ul li {
 }
 #Section1 .carousel-item:first-of-type {
 	background-image: linear-gradient(to top, #0000007c, #00000025),
-		url(/content/assets/images/Section1/First-Slide.jpg);
+		url(../assets/images/Section1/First-Slide.jpg);
 }
 #Section1 .carousel-item:last-of-type {
 	background-image: linear-gradient(to top, #0000007c, #00000025),
-		url(/content/assets/images/Section1/Second-Slide.jpg);
+		url(../assets/images/Section1/Second-Slide.jpg);
 }
 #Section1 .carousel-caption {
 	margin-bottom: 5.25rem;
@@ -308,7 +308,7 @@ ul li {
 			rgba(0, 0, 0, 0),
 			rgba(0, 0, 0, 0)
 		),
-		url(/content/assets/images/Section2/About.jpg);
+		url(../assets/images/Section2/About.jpg);
 	background-size: cover;
 	background-position: center;
 }
