@@ -113,9 +113,9 @@ p {
 	font-weight: var(--font-weight-normal);
 }
 ul li {
-  color: var(--muted-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
+	color: var(--muted-color);
+	font-size: var(--p-font-size);
+	font-weight: var(--font-weight-normal);
 }
 .section-padding {
 	padding: 7.5rem 0;
@@ -127,6 +127,11 @@ ul li {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media screen and (min-width: 1600px) {
+	.Section4__thumb-large {
+		min-height: 416px;
+	}
+}
 @media screen and (max-width: 991px) {
 	h1 {
 		font-size: 48px;
@@ -356,4 +361,52 @@ ul li {
 	color: var(--main-color);
 }
 /* End section-3 */
+/* Start section-4 */
+#Section4 .Section4__thumb {
+	transition: box-shadow 0.4s ease;
+}
+#Section4 .Section4__thumb img {
+	transition: transform 0.4s ease;
+}
+.Section4__thumb-large {
+	height: 416px;
+}
+.Section4__thumb__image {
+	object-fit: cover;
+	height: 100%;
+}
+.Section4__title {
+	background: linear-gradient(to top, var(--dark-color), transparent 90%);
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 25px 25px 10px;
+	transition: padding-bottom 0.4s ease;
+}
+.Section4__btn {
+	bottom: 25px;
+	right: 25px;
+}
+#Section4 .custom-btn {
+	color: var(--white-color);
+	font-size: 30px;
+	background-color: var(--sub-color);
+	padding: 7.5px 15px;
+	border-radius: 50%;
+	transition: background 0.4s ease;
+}
+/* Hover Handle */
+#Section4 .Section4__thumb:hover {
+	box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+#Section4 .Section4__thumb:hover img {
+	transform: scale(1.1, 1.1);
+}
+#Section4 .Section4__thumb:hover .Section4__title {
+	padding-bottom: 30px;
+}
+#Section4 .Section4__thumb:hover .custom-btn {
+	background-color: var(--main-color);
+}
+/* End section-4 */
 /* End main */
